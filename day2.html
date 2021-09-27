@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResponsiveNavigation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            color:white
+        }
+        header{
+            background-color: rgb(43, 41, 41);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+        }
+        #container{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        #logo{
+            width: 15%;
+            font-family:cursive;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            
+
+        }
+        #navigation{
+       
+            width: 40%;
+            line-height: 50px;
+         
+        }
+        #navigation ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 80%;
+
+        }
+        
+        @media (max-width:500px){
+            #container{
+                flex-direction: column;
+                width: 95%;
+            }
+            #logo{
+                width: 100%;
+                text-align: left;
+            }
+            #navigation ul{
+                flex-direction: column;
+                
+            }
+            li{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <div id=container><div id=logo>LOGO</div>
+    <div id=navigation>
+        <ul>
+            <li>Home</li>
+            <li>Testominilal</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div></div>
+  </header>  
+</body>
+</html>
